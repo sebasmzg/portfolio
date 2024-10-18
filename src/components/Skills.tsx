@@ -1,5 +1,4 @@
-import { Icon } from "@mui/material";
-import { DiHtml5, DiCss3, DiJavascript1, DiReact, DiNodejsSmall, DiMongodb } from "react-icons/di";
+import { DiHtml5, DiCss3, DiJavascript1, DiNodejsSmall, DiMongodb } from "react-icons/di";
 import { SiReact, SiTypescript } from "react-icons/si";
 
 const skillsIcons = [
