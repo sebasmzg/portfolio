@@ -10,7 +10,6 @@ export interface NavLinkProps {
 
 export const NavLink = ({ path, title }: NavLinkProps) => {
   const currentPath = usePathname();
-
   return (
     <Link
       href={path}

@@ -13,7 +13,7 @@ import Navbar from "./Navbar";
 const Hero = () => {
     const [imageSrc, setImageSrc] = useState(profile)
   return (
-    <div className="py-24 h-[100vh] relative overflow-clip bg-[linear-gradient(to_bottom,rgba(0,0,0,0.9),#002600_20%,#1b4d1b_35%,#4d804d_60%,#8fbf8f_80%)]">
+    <div className="py-24 relative overflow-clip bg-[linear-gradient(to_bottom,rgba(0,0,0,0.9),#002600_20%,#1b4d1b_35%,#4d804d_60%,#8fbf8f_80%)]">
       <div className="absolute rounded-[50%] w-[3000px] h-[1300px] top-[550px] left-[50%] -translate-x-1/2 bg-[radial-gradient(closest-side,#000_80%,#002600)]"></div>
 
         <div className="relative ">
@@ -22,7 +22,7 @@ const Hero = () => {
                 <h1 className="text-[#ffffff]">Jorge Sebastián</h1>
             </div>
             <motion.div
-            className="absolute left-[20px] top-[50%] translate-y-[-50%]"
+            className="absolute left-[15%] bottom-[8%] translate-y-[-50%] cursor-grab"
             drag
             >
             <Image
@@ -35,7 +35,7 @@ const Hero = () => {
             </motion.div>
 
             <motion.div
-            className="absolute right-[20px] top-[30%] translate-y-[-50%]"
+            className="absolute right-[20px] bottom-[-5%] translate-y-[-50%] cursor-grab"
             drag
             >
             <Image
@@ -48,7 +48,7 @@ const Hero = () => {
             </motion.div>
 
             <motion.div
-            className="absolute right-[23%] top-[-50px] translate-x-[-50%]"
+            className="absolute right-[23%] bottom-[-50px] translate-x-[-50%] cursor-grab"
             drag
             >
             <Image

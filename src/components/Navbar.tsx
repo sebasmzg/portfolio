@@ -7,8 +7,8 @@ import { NavLink } from '@/ui/NavLink';
 
 const navLinks = [
     { name: 'About', href: '#about' },
-    { name: 'Portfolio', href: '/portfolio' },
-    { name: 'Contact', href: '/contact' },
+    { name: 'Portfolio', href: '#portfolio' },
+    { name: 'Contact', href: '#contact' },
 ];
 
 const Navbar = () => {
