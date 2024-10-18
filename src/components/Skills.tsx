@@ -1,34 +1,39 @@
-import { DiHtml5, DiCss3, DiJavascript1, DiNodejsSmall, DiMongodb } from "react-icons/di";
+import { color } from "framer-motion";
+import { DiHtml5, DiCss3, DiJavascript1, DiNodejsSmall, DiMongodb, DiPostgresql } from "react-icons/di";
 import { SiReact, SiTypescript } from "react-icons/si";
 
 const skillsIcons = [
     {
-        icon: <DiHtml5 size={140}/>,
+        icon: <DiHtml5 size={100} color="#E34F26"/>,
         label: 'HTML5',
     },
     {
-        icon: <DiCss3 size={140}/>,
+        icon: <DiCss3 size={100}  color="#1572B6"/>,
         label: 'CSS3',
     },
     {
-        icon: <DiJavascript1 size={140}/>,
+        icon: <DiJavascript1 size={100} color="#F7DF1E"/>,
         label: 'JavaScript',
     },
     {
-        icon: <SiTypescript size={140}/>,
+        icon: <SiTypescript size={100} color="#3178C6"/>,
         label: 'TypeScript',
     },
     {
-        icon: <SiReact  size={140}/>,
+        icon: <SiReact  size={100} color="61DAFB"/>,
         label: 'React',
     },
     {
-        icon: <DiNodejsSmall size={140}/>,
-        label: 'Node.js',
+        icon: <DiNodejsSmall size={100} color="#339933"/>,
+        label: 'Node.js'
     },
     {
-        icon: <DiMongodb size={140}/>,
-        label: 'MongoDB',
+        icon: <DiMongodb size={100} color="#47A248"/>,
+        label: 'MongoDB'
+    },
+    {
+        icon: <DiPostgresql size={100} color="#336791"/>,
+        label: 'PostgreSQL'
     }
 ];
 
@@ -36,12 +41,12 @@ const Skills = () => {
     return (
         <div className="bg-[linear-gradient(to_top,#000,#000A00_80%)] py-32" >
             <div className="text-white max-w-[950] mx-auto p-8 text-center">
-                <h2 className="text-6xl font-bold mb-4">What i do</h2>
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <h2 className="text-6xl font-bold mb-20">What i do</h2>
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
                     {skillsIcons.map((skill, index) => (
                         <div 
                             key={index}
-                            className="h-[160px] w-[160px] md:h-[220px] md:w-[220px] flex flex-col justify-between items-center bg-white/10 p-4 rounded-xl"
+                            className="h-[160px] w-[160px] md:h-[200px] md:w-[200px] flex flex-col justify-around items-center bg-white/10 p-4 rounded-xl"
                             >
                                 {skill.icon}
                                 <p className="mt-2">{skill.label}</p>

@@ -22,7 +22,7 @@ const Hero = () => {
                 <h1 className="text-[#ffffff]">Jorge Sebastián</h1>
             </div>
             <motion.div
-            className="absolute left-[15%] bottom-[8%] translate-y-[-50%] cursor-grab"
+            className="absolute left-[15%] bottom-[8%] translate-y-[-50%] cursor-grab hidden md:block"
             drag
             >
             <Image
@@ -35,7 +35,7 @@ const Hero = () => {
             </motion.div>
 
             <motion.div
-            className="absolute right-[20px] bottom-[-5%] translate-y-[-50%] cursor-grab"
+            className="absolute right-[20px] bottom-[-5%] translate-y-[-50%] cursor-grab hidden md:block"
             drag
             >
             <Image
