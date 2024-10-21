@@ -1,6 +1,8 @@
+import StarsCanvas from "./Stars";
+
 const Contact = () => {
     return (
-        <div className="max-w[1000px] bg-black mx-auto flex justify-center text-white/70 p-8 rounded-lg space-y-8 lg:space-y-0 lg:space-x-8" id="contact">
+        <div className="max-w[1000px] relative mx-auto flex justify-center text-white/70 p-8 rounded-lg space-y-8 lg:space-y-0 lg:space-x-8" id="contact">
             <div className="bg-white/10 p-6 rounded-xl mx-w-[550px]">
                 <h2 className="text-5xl font-bold text-green-700 mb-4">lets connect</h2>
                 <p className="text-white/70 mb-6">send me a message</p>
@@ -15,6 +17,7 @@ const Contact = () => {
                     <button className="bg-green-700 hover:bg-green-500 text-white px-6 py-2 w-full font-semibold text-xl rounded-xl" type="submit">Send me a message</button>
                 </form>
             </div>
+            <StarsCanvas />
         </div>
     );
 }

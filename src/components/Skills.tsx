@@ -1,6 +1,6 @@
-import { color } from "framer-motion";
 import { DiHtml5, DiCss3, DiJavascript1, DiNodejsSmall, DiMongodb, DiPostgresql } from "react-icons/di";
 import { SiReact, SiTypescript } from "react-icons/si";
+import StarsCanvas from "./Stars";
 
 const skillsIcons = [
     {
@@ -39,7 +39,7 @@ const skillsIcons = [
 
 const Skills = () => {
     return (
-        <div className="bg-[linear-gradient(to_top,#000,#000A00_80%)] py-32" >
+        <div className="relative py-32" >
             <div className="text-white max-w-[950] mx-auto p-8 text-center">
                 <h2 className="text-6xl font-bold mb-20">What i do</h2>
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
@@ -54,6 +54,7 @@ const Skills = () => {
                     ))}
                 </div>
             </div>
+            <StarsCanvas />
         </div>
     );
 }

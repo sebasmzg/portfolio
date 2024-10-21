@@ -8,6 +8,7 @@ import project1 from "../assets/proj1.jpg";
 import project2 from "../assets/proj2.jpg";
 import project3 from "../assets/proj3.png";
 import project4 from "../assets/proj4.jpg";
+import StarsCanvas from "./Stars";
 
 const projects = [
   {
@@ -63,7 +64,7 @@ const projects = [
 const Portfolio = () => {
   return (
     <div
-      className="text-white bg-gradient-to-b from-black to-[#000A00] py-18 pt-52"
+      className="text-white relative py-18 pt-52"
       id="#portfolio"
     >
       <h1 className="text-white text-6xl w-[320px] mx-auto font-semibold my-12">
@@ -112,6 +113,7 @@ const Portfolio = () => {
           </motion.div>
         ))}
       </div>
+      <StarsCanvas />
     </div>
   );
 };
