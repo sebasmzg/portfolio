@@ -1,4 +1,4 @@
-import { DiHtml5, DiCss3, DiJavascript1, DiNodejsSmall, DiMongodb, DiPostgresql } from "react-icons/di";
+import { DiHtml5, DiCss3, DiJavascript1, DiNodejsSmall, DiMongodb, DiMysql } from "react-icons/di";
 import { SiReact, SiTypescript } from "react-icons/si";
 import StarsCanvas from "./Stars";
 
@@ -32,9 +32,9 @@ const skillsIcons = [
         label: 'MongoDB'
     },
     {
-        icon: <DiPostgresql size={100} color="#336791"/>,
-        label: 'PostgreSQL'
-    }
+        icon: <DiMysql size={100} color="#336791"/>,
+        label: 'Mysql'
+    },
 ];
 
 const Skills = () => {

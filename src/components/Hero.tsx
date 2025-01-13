@@ -21,7 +21,7 @@ const Hero = () => {
       <div className="relative">
         <div className="text-8xl font-semibold text-center relative">
           <h1 className="text-[#ffffff8a]">Hey, I&apos;m</h1>
-          <h1 className="text-[#ffffff]">Jorge Sebastián</h1>
+          <h1 className="text-[#ffffff]">Sebastián Muñoz</h1>
 
           <motion.div
             className="absolute left-[80px] top-[30px] translate-y-[-50%] cursor-grab hidden md:block"
@@ -39,8 +39,8 @@ const Hero = () => {
             <Image
               src={leaf1}
               alt="left leaf"
-              height="140"
-              width="140"
+              height="150"
+              width="150"
               draggable="false"
             />
           </motion.div>
@@ -61,8 +61,8 @@ const Hero = () => {
             <Image
               src={leaf2}
               alt="right leaf"
-              height="140"
-              width="140"
+              height="150"
+              width="150"
               draggable="false"
             />
           </motion.div>
